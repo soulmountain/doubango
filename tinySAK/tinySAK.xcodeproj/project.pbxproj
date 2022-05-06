@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E88EDDB22F91393008C7BA3 /* tsk_mutex.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88ED9B22F9138D008C7BA3 /* tsk_mutex.h */; };
+		0E88EDDC22F91393008C7BA3 /* tsk_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88ED9C22F9138D008C7BA3 /* tsk_string.c */; };
+		0E88EDDD22F91393008C7BA3 /* tsk_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88ED9C22F9138D008C7BA3 /* tsk_string.c */; };
+		0E88EDDE22F91393008C7BA3 /* tsk_debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88ED9D22F9138D008C7BA3 /* tsk_debug.c */; };
+		0E88EDDF22F91393008C7BA3 /* tsk_debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88ED9D22F9138D008C7BA3 /* tsk_debug.c */; };
+		0E88EDE022F91393008C7BA3 /* tsk_url.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88ED9E22F9138D008C7BA3 /* tsk_url.c */; };
+		0E88EDE122F91393008C7BA3 /* tsk_url.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88ED9E22F9138D008C7BA3 /* tsk_url.c */; };
+		0E88EDE222F91393008C7BA3 /* tsk_errno.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88ED9F22F9138D008C7BA3 /* tsk_errno.h */; };
+		0E88EDE322F91393008C7BA3 /* tsk.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDA022F9138D008C7BA3 /* tsk.h */; };
+		0E88EDE422F91393008C7BA3 /* tsk_options.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDA122F9138D008C7BA3 /* tsk_options.c */; };
+		0E88EDE522F91393008C7BA3 /* tsk_options.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDA122F9138D008C7BA3 /* tsk_options.c */; };
+		0E88EDE622F91393008C7BA3 /* tsk_md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDA222F9138D008C7BA3 /* tsk_md5.c */; };
+		0E88EDE722F91393008C7BA3 /* tsk_md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDA222F9138D008C7BA3 /* tsk_md5.c */; };
+		0E88EDE822F91393008C7BA3 /* tsk_uuid.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDA322F9138D008C7BA3 /* tsk_uuid.h */; };
+		0E88EDE922F91393008C7BA3 /* tsk_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDA422F9138D008C7BA3 /* tsk_buffer.c */; };
+		0E88EDEA22F91393008C7BA3 /* tsk_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDA422F9138D008C7BA3 /* tsk_buffer.c */; };
+		0E88EDEB22F91393008C7BA3 /* tsk_ppfcs16.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDA522F9138D008C7BA3 /* tsk_ppfcs16.c */; };
+		0E88EDEC22F91393008C7BA3 /* tsk_ppfcs16.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDA522F9138D008C7BA3 /* tsk_ppfcs16.c */; };
+		0E88EDED22F91393008C7BA3 /* tsk_binaryutils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDA622F9138D008C7BA3 /* tsk_binaryutils.h */; };
+		0E88EDEE22F91393008C7BA3 /* tsk_ppfcs16.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDA722F9138E008C7BA3 /* tsk_ppfcs16.h */; };
+		0E88EDEF22F91393008C7BA3 /* tsk_debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDA822F9138E008C7BA3 /* tsk_debug.h */; };
+		0E88EDF022F91393008C7BA3 /* tsk_mutex.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDA922F9138E008C7BA3 /* tsk_mutex.c */; };
+		0E88EDF122F91393008C7BA3 /* tsk_mutex.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDA922F9138E008C7BA3 /* tsk_mutex.c */; };
+		0E88EDF222F91393008C7BA3 /* tsk_xml.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDAA22F9138E008C7BA3 /* tsk_xml.h */; };
+		0E88EDF322F91393008C7BA3 /* tinysak_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDAB22F9138E008C7BA3 /* tinysak_config.h */; };
+		0E88EDF422F91393008C7BA3 /* tsk_xml.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDAC22F9138E008C7BA3 /* tsk_xml.c */; };
+		0E88EDF522F91393008C7BA3 /* tsk_xml.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDAC22F9138E008C7BA3 /* tsk_xml.c */; };
+		0E88EDF622F91393008C7BA3 /* tsk_binaryutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDAD22F9138E008C7BA3 /* tsk_binaryutils.c */; };
+		0E88EDF722F91393008C7BA3 /* tsk_binaryutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDAD22F9138E008C7BA3 /* tsk_binaryutils.c */; };
+		0E88EDF822F91393008C7BA3 /* tsk_sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDAE22F9138E008C7BA3 /* tsk_sha1.h */; };
+		0E88EDF922F91393008C7BA3 /* tsk_hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDAF22F9138E008C7BA3 /* tsk_hmac.h */; };
+		0E88EDFA22F91393008C7BA3 /* tsk_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDB022F9138E008C7BA3 /* tsk_list.c */; };
+		0E88EDFB22F91393008C7BA3 /* tsk_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDB022F9138E008C7BA3 /* tsk_list.c */; };
+		0E88EDFC22F91393008C7BA3 /* tsk_ragel_state.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDB122F9138E008C7BA3 /* tsk_ragel_state.h */; };
+		0E88EDFD22F91393008C7BA3 /* tsk_condwait.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDB222F9138E008C7BA3 /* tsk_condwait.h */; };
+		0E88EDFE22F91393008C7BA3 /* tsk_ragel_state.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDB322F9138F008C7BA3 /* tsk_ragel_state.c */; };
+		0E88EDFF22F91393008C7BA3 /* tsk_ragel_state.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDB322F9138F008C7BA3 /* tsk_ragel_state.c */; };
+		0E88EE0022F91393008C7BA3 /* tsk_plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDB422F9138F008C7BA3 /* tsk_plugin.c */; };
+		0E88EE0122F91393008C7BA3 /* tsk_plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDB422F9138F008C7BA3 /* tsk_plugin.c */; };
+		0E88EE0222F91393008C7BA3 /* tsk_list.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDB522F9138F008C7BA3 /* tsk_list.h */; };
+		0E88EE0322F91393008C7BA3 /* tsk_md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDB622F9138F008C7BA3 /* tsk_md5.h */; };
+		0E88EE0422F91393008C7BA3 /* tsk_time.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDB722F9138F008C7BA3 /* tsk_time.h */; };
+		0E88EE0522F91393008C7BA3 /* tsk_timer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDB822F9138F008C7BA3 /* tsk_timer.h */; };
+		0E88EE0622F91393008C7BA3 /* tsk_memory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDB922F9138F008C7BA3 /* tsk_memory.h */; };
+		0E88EE0722F91393008C7BA3 /* tsk_buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDBA22F9138F008C7BA3 /* tsk_buffer.h */; };
+		0E88EE0822F91393008C7BA3 /* tsk_semaphore.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDBB22F9138F008C7BA3 /* tsk_semaphore.h */; };
+		0E88EE0922F91393008C7BA3 /* tsk_hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDBC22F9138F008C7BA3 /* tsk_hmac.c */; };
+		0E88EE0A22F91393008C7BA3 /* tsk_hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDBC22F9138F008C7BA3 /* tsk_hmac.c */; };
+		0E88EE0B22F91393008C7BA3 /* tsk_timer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDBD22F9138F008C7BA3 /* tsk_timer.c */; };
+		0E88EE0C22F91393008C7BA3 /* tsk_timer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDBD22F9138F008C7BA3 /* tsk_timer.c */; };
+		0E88EE0D22F91393008C7BA3 /* tsk.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDBE22F91390008C7BA3 /* tsk.c */; };
+		0E88EE0E22F91393008C7BA3 /* tsk.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDBE22F91390008C7BA3 /* tsk.c */; };
+		0E88EE0F22F91393008C7BA3 /* tsk_params.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDBF22F91390008C7BA3 /* tsk_params.h */; };
+		0E88EE1022F91393008C7BA3 /* tsk_safeobj.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDC022F91390008C7BA3 /* tsk_safeobj.h */; };
+		0E88EE1122F91393008C7BA3 /* tsk_base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDC122F91390008C7BA3 /* tsk_base64.h */; };
+		0E88EE1222F91393008C7BA3 /* tsk_condwait.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDC222F91390008C7BA3 /* tsk_condwait.c */; };
+		0E88EE1322F91393008C7BA3 /* tsk_condwait.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDC222F91390008C7BA3 /* tsk_condwait.c */; };
+		0E88EE1422F91393008C7BA3 /* tsk_options.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDC322F91390008C7BA3 /* tsk_options.h */; };
+		0E88EE1522F91393008C7BA3 /* tsk_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDC422F91390008C7BA3 /* tsk_time.c */; };
+		0E88EE1622F91393008C7BA3 /* tsk_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDC422F91390008C7BA3 /* tsk_time.c */; };
+		0E88EE1722F91393008C7BA3 /* tsk_params.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDC522F91390008C7BA3 /* tsk_params.c */; };
+		0E88EE1822F91393008C7BA3 /* tsk_params.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDC522F91390008C7BA3 /* tsk_params.c */; };
+		0E88EE1922F91393008C7BA3 /* tsk_memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDC622F91391008C7BA3 /* tsk_memory.c */; };
+		0E88EE1A22F91393008C7BA3 /* tsk_memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDC622F91391008C7BA3 /* tsk_memory.c */; };
+		0E88EE1B22F91393008C7BA3 /* tsk_ppfcs32.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDC722F91391008C7BA3 /* tsk_ppfcs32.h */; };
+		0E88EE1C22F91393008C7BA3 /* tsk_semaphore.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDC822F91391008C7BA3 /* tsk_semaphore.c */; };
+		0E88EE1D22F91393008C7BA3 /* tsk_semaphore.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDC822F91391008C7BA3 /* tsk_semaphore.c */; };
+		0E88EE1E22F91393008C7BA3 /* tsk_plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDC922F91391008C7BA3 /* tsk_plugin.h */; };
+		0E88EE1F22F91393008C7BA3 /* tsk_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDCA22F91391008C7BA3 /* tsk_common.h */; };
+		0E88EE2022F91393008C7BA3 /* tsk_runnable.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDCB22F91391008C7BA3 /* tsk_runnable.c */; };
+		0E88EE2122F91393008C7BA3 /* tsk_runnable.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDCB22F91391008C7BA3 /* tsk_runnable.c */; };
+		0E88EE2222F91393008C7BA3 /* tsk_ppfcs32.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDCC22F91391008C7BA3 /* tsk_ppfcs32.c */; };
+		0E88EE2322F91393008C7BA3 /* tsk_ppfcs32.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDCC22F91391008C7BA3 /* tsk_ppfcs32.c */; };
+		0E88EE2422F91393008C7BA3 /* tsk_url.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDCD22F91391008C7BA3 /* tsk_url.h */; };
+		0E88EE2522F91393008C7BA3 /* tsk_object.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDCE22F91392008C7BA3 /* tsk_object.h */; };
+		0E88EE2622F91393008C7BA3 /* tsk_runnable.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDCF22F91392008C7BA3 /* tsk_runnable.h */; };
+		0E88EE2722F91393008C7BA3 /* tsk_thread.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDD022F91392008C7BA3 /* tsk_thread.h */; };
+		0E88EE2822F91393008C7BA3 /* tsk_thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDD122F91392008C7BA3 /* tsk_thread.c */; };
+		0E88EE2922F91393008C7BA3 /* tsk_thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDD122F91392008C7BA3 /* tsk_thread.c */; };
+		0E88EE2A22F91393008C7BA3 /* tsk_fsm.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDD222F91392008C7BA3 /* tsk_fsm.h */; };
+		0E88EE2B22F91393008C7BA3 /* tsk_safeobj.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDD322F91392008C7BA3 /* tsk_safeobj.c */; };
+		0E88EE2C22F91393008C7BA3 /* tsk_safeobj.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDD322F91392008C7BA3 /* tsk_safeobj.c */; };
+		0E88EE2D22F91393008C7BA3 /* tsk_sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDD422F91392008C7BA3 /* tsk_sha1.c */; };
+		0E88EE2E22F91393008C7BA3 /* tsk_sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDD422F91392008C7BA3 /* tsk_sha1.c */; };
+		0E88EE2F22F91393008C7BA3 /* tsk_uuid.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDD522F91392008C7BA3 /* tsk_uuid.c */; };
+		0E88EE3022F91393008C7BA3 /* tsk_uuid.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDD522F91392008C7BA3 /* tsk_uuid.c */; };
+		0E88EE3122F91393008C7BA3 /* tsk_object.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDD622F91393008C7BA3 /* tsk_object.c */; };
+		0E88EE3222F91393008C7BA3 /* tsk_object.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDD622F91393008C7BA3 /* tsk_object.c */; };
+		0E88EE3322F91393008C7BA3 /* tsk_string.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E88EDD722F91393008C7BA3 /* tsk_string.h */; };
+		0E88EE3422F91393008C7BA3 /* tsk_base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDD822F91393008C7BA3 /* tsk_base64.c */; };
+		0E88EE3522F91393008C7BA3 /* tsk_base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDD822F91393008C7BA3 /* tsk_base64.c */; };
+		0E88EE3622F91393008C7BA3 /* tsk_fsm.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDDA22F91393008C7BA3 /* tsk_fsm.c */; };
+		0E88EE3722F91393008C7BA3 /* tsk_fsm.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E88EDDA22F91393008C7BA3 /* tsk_fsm.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		87178A6C22CB7B58001D12A0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E88ED9B22F9138D008C7BA3 /* tsk_mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_mutex.h; path = src/tsk_mutex.h; sourceTree = "<group>"; };
+		0E88ED9C22F9138D008C7BA3 /* tsk_string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_string.c; path = src/tsk_string.c; sourceTree = "<group>"; };
+		0E88ED9D22F9138D008C7BA3 /* tsk_debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_debug.c; path = src/tsk_debug.c; sourceTree = "<group>"; };
+		0E88ED9E22F9138D008C7BA3 /* tsk_url.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_url.c; path = src/tsk_url.c; sourceTree = "<group>"; };
+		0E88ED9F22F9138D008C7BA3 /* tsk_errno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_errno.h; path = src/tsk_errno.h; sourceTree = "<group>"; };
+		0E88EDA022F9138D008C7BA3 /* tsk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk.h; path = src/tsk.h; sourceTree = "<group>"; };
+		0E88EDA122F9138D008C7BA3 /* tsk_options.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_options.c; path = src/tsk_options.c; sourceTree = "<group>"; };
+		0E88EDA222F9138D008C7BA3 /* tsk_md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_md5.c; path = src/tsk_md5.c; sourceTree = "<group>"; };
+		0E88EDA322F9138D008C7BA3 /* tsk_uuid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_uuid.h; path = src/tsk_uuid.h; sourceTree = "<group>"; };
+		0E88EDA422F9138D008C7BA3 /* tsk_buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_buffer.c; path = src/tsk_buffer.c; sourceTree = "<group>"; };
+		0E88EDA522F9138D008C7BA3 /* tsk_ppfcs16.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_ppfcs16.c; path = src/tsk_ppfcs16.c; sourceTree = "<group>"; };
+		0E88EDA622F9138D008C7BA3 /* tsk_binaryutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_binaryutils.h; path = src/tsk_binaryutils.h; sourceTree = "<group>"; };
+		0E88EDA722F9138E008C7BA3 /* tsk_ppfcs16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_ppfcs16.h; path = src/tsk_ppfcs16.h; sourceTree = "<group>"; };
+		0E88EDA822F9138E008C7BA3 /* tsk_debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_debug.h; path = src/tsk_debug.h; sourceTree = "<group>"; };
+		0E88EDA922F9138E008C7BA3 /* tsk_mutex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_mutex.c; path = src/tsk_mutex.c; sourceTree = "<group>"; };
+		0E88EDAA22F9138E008C7BA3 /* tsk_xml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_xml.h; path = src/tsk_xml.h; sourceTree = "<group>"; };
+		0E88EDAB22F9138E008C7BA3 /* tinysak_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinysak_config.h; path = src/tinysak_config.h; sourceTree = "<group>"; };
+		0E88EDAC22F9138E008C7BA3 /* tsk_xml.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_xml.c; path = src/tsk_xml.c; sourceTree = "<group>"; };
+		0E88EDAD22F9138E008C7BA3 /* tsk_binaryutils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_binaryutils.c; path = src/tsk_binaryutils.c; sourceTree = "<group>"; };
+		0E88EDAE22F9138E008C7BA3 /* tsk_sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_sha1.h; path = src/tsk_sha1.h; sourceTree = "<group>"; };
+		0E88EDAF22F9138E008C7BA3 /* tsk_hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_hmac.h; path = src/tsk_hmac.h; sourceTree = "<group>"; };
+		0E88EDB022F9138E008C7BA3 /* tsk_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_list.c; path = src/tsk_list.c; sourceTree = "<group>"; };
+		0E88EDB122F9138E008C7BA3 /* tsk_ragel_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_ragel_state.h; path = src/tsk_ragel_state.h; sourceTree = "<group>"; };
+		0E88EDB222F9138E008C7BA3 /* tsk_condwait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_condwait.h; path = src/tsk_condwait.h; sourceTree = "<group>"; };
+		0E88EDB322F9138F008C7BA3 /* tsk_ragel_state.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_ragel_state.c; path = src/tsk_ragel_state.c; sourceTree = "<group>"; };
+		0E88EDB422F9138F008C7BA3 /* tsk_plugin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_plugin.c; path = src/tsk_plugin.c; sourceTree = "<group>"; };
+		0E88EDB522F9138F008C7BA3 /* tsk_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_list.h; path = src/tsk_list.h; sourceTree = "<group>"; };
+		0E88EDB622F9138F008C7BA3 /* tsk_md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_md5.h; path = src/tsk_md5.h; sourceTree = "<group>"; };
+		0E88EDB722F9138F008C7BA3 /* tsk_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_time.h; path = src/tsk_time.h; sourceTree = "<group>"; };
+		0E88EDB822F9138F008C7BA3 /* tsk_timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_timer.h; path = src/tsk_timer.h; sourceTree = "<group>"; };
+		0E88EDB922F9138F008C7BA3 /* tsk_memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_memory.h; path = src/tsk_memory.h; sourceTree = "<group>"; };
+		0E88EDBA22F9138F008C7BA3 /* tsk_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_buffer.h; path = src/tsk_buffer.h; sourceTree = "<group>"; };
+		0E88EDBB22F9138F008C7BA3 /* tsk_semaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_semaphore.h; path = src/tsk_semaphore.h; sourceTree = "<group>"; };
+		0E88EDBC22F9138F008C7BA3 /* tsk_hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_hmac.c; path = src/tsk_hmac.c; sourceTree = "<group>"; };
+		0E88EDBD22F9138F008C7BA3 /* tsk_timer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_timer.c; path = src/tsk_timer.c; sourceTree = "<group>"; };
+		0E88EDBE22F91390008C7BA3 /* tsk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk.c; path = src/tsk.c; sourceTree = "<group>"; };
+		0E88EDBF22F91390008C7BA3 /* tsk_params.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_params.h; path = src/tsk_params.h; sourceTree = "<group>"; };
+		0E88EDC022F91390008C7BA3 /* tsk_safeobj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_safeobj.h; path = src/tsk_safeobj.h; sourceTree = "<group>"; };
+		0E88EDC122F91390008C7BA3 /* tsk_base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_base64.h; path = src/tsk_base64.h; sourceTree = "<group>"; };
+		0E88EDC222F91390008C7BA3 /* tsk_condwait.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_condwait.c; path = src/tsk_condwait.c; sourceTree = "<group>"; };
+		0E88EDC322F91390008C7BA3 /* tsk_options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_options.h; path = src/tsk_options.h; sourceTree = "<group>"; };
+		0E88EDC422F91390008C7BA3 /* tsk_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_time.c; path = src/tsk_time.c; sourceTree = "<group>"; };
+		0E88EDC522F91390008C7BA3 /* tsk_params.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_params.c; path = src/tsk_params.c; sourceTree = "<group>"; };
+		0E88EDC622F91391008C7BA3 /* tsk_memory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_memory.c; path = src/tsk_memory.c; sourceTree = "<group>"; };
+		0E88EDC722F91391008C7BA3 /* tsk_ppfcs32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_ppfcs32.h; path = src/tsk_ppfcs32.h; sourceTree = "<group>"; };
+		0E88EDC822F91391008C7BA3 /* tsk_semaphore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_semaphore.c; path = src/tsk_semaphore.c; sourceTree = "<group>"; };
+		0E88EDC922F91391008C7BA3 /* tsk_plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_plugin.h; path = src/tsk_plugin.h; sourceTree = "<group>"; };
+		0E88EDCA22F91391008C7BA3 /* tsk_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_common.h; path = src/tsk_common.h; sourceTree = "<group>"; };
+		0E88EDCB22F91391008C7BA3 /* tsk_runnable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_runnable.c; path = src/tsk_runnable.c; sourceTree = "<group>"; };
+		0E88EDCC22F91391008C7BA3 /* tsk_ppfcs32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_ppfcs32.c; path = src/tsk_ppfcs32.c; sourceTree = "<group>"; };
+		0E88EDCD22F91391008C7BA3 /* tsk_url.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_url.h; path = src/tsk_url.h; sourceTree = "<group>"; };
+		0E88EDCE22F91392008C7BA3 /* tsk_object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_object.h; path = src/tsk_object.h; sourceTree = "<group>"; };
+		0E88EDCF22F91392008C7BA3 /* tsk_runnable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_runnable.h; path = src/tsk_runnable.h; sourceTree = "<group>"; };
+		0E88EDD022F91392008C7BA3 /* tsk_thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_thread.h; path = src/tsk_thread.h; sourceTree = "<group>"; };
+		0E88EDD122F91392008C7BA3 /* tsk_thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_thread.c; path = src/tsk_thread.c; sourceTree = "<group>"; };
+		0E88EDD222F91392008C7BA3 /* tsk_fsm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_fsm.h; path = src/tsk_fsm.h; sourceTree = "<group>"; };
+		0E88EDD322F91392008C7BA3 /* tsk_safeobj.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_safeobj.c; path = src/tsk_safeobj.c; sourceTree = "<group>"; };
+		0E88EDD422F91392008C7BA3 /* tsk_sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_sha1.c; path = src/tsk_sha1.c; sourceTree = "<group>"; };
+		0E88EDD522F91392008C7BA3 /* tsk_uuid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_uuid.c; path = src/tsk_uuid.c; sourceTree = "<group>"; };
+		0E88EDD622F91393008C7BA3 /* tsk_object.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_object.c; path = src/tsk_object.c; sourceTree = "<group>"; };
+		0E88EDD722F91393008C7BA3 /* tsk_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tsk_string.h; path = src/tsk_string.h; sourceTree = "<group>"; };
+		0E88EDD822F91393008C7BA3 /* tsk_base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_base64.c; path = src/tsk_base64.c; sourceTree = "<group>"; };
+		0E88EDD922F91393008C7BA3 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.am; path = src/Makefile.am; sourceTree = "<group>"; };
+		0E88EDDA22F91393008C7BA3 /* tsk_fsm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsk_fsm.c; path = src/tsk_fsm.c; sourceTree = "<group>"; };
+		87178A4722CB7B0F001D12A0 /* libtinySak Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libtinySak Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87178A6E22CB7B58001D12A0 /* libtinySak iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libtinySak iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87178A4522CB7B0F001D12A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87178A6B22CB7B58001D12A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87178A2022CB7A9A001D12A0 = {
+			isa = PBXGroup;
+			children = (
+				0E88EDD922F91393008C7BA3 /* Makefile.am */,
+				0E88EDAB22F9138E008C7BA3 /* tinysak_config.h */,
+				0E88EDD822F91393008C7BA3 /* tsk_base64.c */,
+				0E88EDC122F91390008C7BA3 /* tsk_base64.h */,
+				0E88EDAD22F9138E008C7BA3 /* tsk_binaryutils.c */,
+				0E88EDA622F9138D008C7BA3 /* tsk_binaryutils.h */,
+				0E88EDA422F9138D008C7BA3 /* tsk_buffer.c */,
+				0E88EDBA22F9138F008C7BA3 /* tsk_buffer.h */,
+				0E88EDCA22F91391008C7BA3 /* tsk_common.h */,
+				0E88EDC222F91390008C7BA3 /* tsk_condwait.c */,
+				0E88EDB222F9138E008C7BA3 /* tsk_condwait.h */,
+				0E88ED9D22F9138D008C7BA3 /* tsk_debug.c */,
+				0E88EDA822F9138E008C7BA3 /* tsk_debug.h */,
+				0E88ED9F22F9138D008C7BA3 /* tsk_errno.h */,
+				0E88EDDA22F91393008C7BA3 /* tsk_fsm.c */,
+				0E88EDD222F91392008C7BA3 /* tsk_fsm.h */,
+				0E88EDBC22F9138F008C7BA3 /* tsk_hmac.c */,
+				0E88EDAF22F9138E008C7BA3 /* tsk_hmac.h */,
+				0E88EDB022F9138E008C7BA3 /* tsk_list.c */,
+				0E88EDB522F9138F008C7BA3 /* tsk_list.h */,
+				0E88EDA222F9138D008C7BA3 /* tsk_md5.c */,
+				0E88EDB622F9138F008C7BA3 /* tsk_md5.h */,
+				0E88EDC622F91391008C7BA3 /* tsk_memory.c */,
+				0E88EDB922F9138F008C7BA3 /* tsk_memory.h */,
+				0E88EDA922F9138E008C7BA3 /* tsk_mutex.c */,
+				0E88ED9B22F9138D008C7BA3 /* tsk_mutex.h */,
+				0E88EDD622F91393008C7BA3 /* tsk_object.c */,
+				0E88EDCE22F91392008C7BA3 /* tsk_object.h */,
+				0E88EDA122F9138D008C7BA3 /* tsk_options.c */,
+				0E88EDC322F91390008C7BA3 /* tsk_options.h */,
+				0E88EDC522F91390008C7BA3 /* tsk_params.c */,
+				0E88EDBF22F91390008C7BA3 /* tsk_params.h */,
+				0E88EDB422F9138F008C7BA3 /* tsk_plugin.c */,
+				0E88EDC922F91391008C7BA3 /* tsk_plugin.h */,
+				0E88EDA522F9138D008C7BA3 /* tsk_ppfcs16.c */,
+				0E88EDA722F9138E008C7BA3 /* tsk_ppfcs16.h */,
+				0E88EDCC22F91391008C7BA3 /* tsk_ppfcs32.c */,
+				0E88EDC722F91391008C7BA3 /* tsk_ppfcs32.h */,
+				0E88EDB322F9138F008C7BA3 /* tsk_ragel_state.c */,
+				0E88EDB122F9138E008C7BA3 /* tsk_ragel_state.h */,
+				0E88EDCB22F91391008C7BA3 /* tsk_runnable.c */,
+				0E88EDCF22F91392008C7BA3 /* tsk_runnable.h */,
+				0E88EDD322F91392008C7BA3 /* tsk_safeobj.c */,
+				0E88EDC022F91390008C7BA3 /* tsk_safeobj.h */,
+				0E88EDC822F91391008C7BA3 /* tsk_semaphore.c */,
+				0E88EDBB22F9138F008C7BA3 /* tsk_semaphore.h */,
+				0E88EDD422F91392008C7BA3 /* tsk_sha1.c */,
+				0E88EDAE22F9138E008C7BA3 /* tsk_sha1.h */,
+				0E88ED9C22F9138D008C7BA3 /* tsk_string.c */,
+				0E88EDD722F91393008C7BA3 /* tsk_string.h */,
+				0E88EDD122F91392008C7BA3 /* tsk_thread.c */,
+				0E88EDD022F91392008C7BA3 /* tsk_thread.h */,
+				0E88EDC422F91390008C7BA3 /* tsk_time.c */,
+				0E88EDB722F9138F008C7BA3 /* tsk_time.h */,
+				0E88EDBD22F9138F008C7BA3 /* tsk_timer.c */,
+				0E88EDB822F9138F008C7BA3 /* tsk_timer.h */,
+				0E88ED9E22F9138D008C7BA3 /* tsk_url.c */,
+				0E88EDCD22F91391008C7BA3 /* tsk_url.h */,
+				0E88EDD522F91392008C7BA3 /* tsk_uuid.c */,
+				0E88EDA322F9138D008C7BA3 /* tsk_uuid.h */,
+				0E88EDAC22F9138E008C7BA3 /* tsk_xml.c */,
+				0E88EDAA22F9138E008C7BA3 /* tsk_xml.h */,
+				0E88EDBE22F91390008C7BA3 /* tsk.c */,
+				0E88EDA022F9138D008C7BA3 /* tsk.h */,
+				87178A2C22CB7AD1001D12A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87178A2C22CB7AD1001D12A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87178A4722CB7B0F001D12A0 /* libtinySak Mac.a */,
+				87178A6E22CB7B58001D12A0 /* libtinySak iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		87178A4322CB7B0F001D12A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E88EE0422F91393008C7BA3 /* tsk_time.h in Headers */,
+				0E88EE1122F91393008C7BA3 /* tsk_base64.h in Headers */,
+				0E88EDF822F91393008C7BA3 /* tsk_sha1.h in Headers */,
+				0E88EE0822F91393008C7BA3 /* tsk_semaphore.h in Headers */,
+				0E88EE2522F91393008C7BA3 /* tsk_object.h in Headers */,
+				0E88EE1E22F91393008C7BA3 /* tsk_plugin.h in Headers */,
+				0E88EDFD22F91393008C7BA3 /* tsk_condwait.h in Headers */,
+				0E88EDF322F91393008C7BA3 /* tinysak_config.h in Headers */,
+				0E88EE0222F91393008C7BA3 /* tsk_list.h in Headers */,
+				0E88EDE822F91393008C7BA3 /* tsk_uuid.h in Headers */,
+				0E88EE1422F91393008C7BA3 /* tsk_options.h in Headers */,
+				0E88EE0322F91393008C7BA3 /* tsk_md5.h in Headers */,
+				0E88EE0722F91393008C7BA3 /* tsk_buffer.h in Headers */,
+				0E88EDF222F91393008C7BA3 /* tsk_xml.h in Headers */,
+				0E88EE1F22F91393008C7BA3 /* tsk_common.h in Headers */,
+				0E88EDEE22F91393008C7BA3 /* tsk_ppfcs16.h in Headers */,
+				0E88EDE322F91393008C7BA3 /* tsk.h in Headers */,
+				0E88EDE222F91393008C7BA3 /* tsk_errno.h in Headers */,
+				0E88EDEF22F91393008C7BA3 /* tsk_debug.h in Headers */,
+				0E88EE2722F91393008C7BA3 /* tsk_thread.h in Headers */,
+				0E88EDF922F91393008C7BA3 /* tsk_hmac.h in Headers */,
+				0E88EE2422F91393008C7BA3 /* tsk_url.h in Headers */,
+				0E88EE2A22F91393008C7BA3 /* tsk_fsm.h in Headers */,
+				0E88EE0522F91393008C7BA3 /* tsk_timer.h in Headers */,
+				0E88EE0622F91393008C7BA3 /* tsk_memory.h in Headers */,
+				0E88EE0F22F91393008C7BA3 /* tsk_params.h in Headers */,
+				0E88EE2622F91393008C7BA3 /* tsk_runnable.h in Headers */,
+				0E88EDED22F91393008C7BA3 /* tsk_binaryutils.h in Headers */,
+				0E88EDDB22F91393008C7BA3 /* tsk_mutex.h in Headers */,
+				0E88EE1B22F91393008C7BA3 /* tsk_ppfcs32.h in Headers */,
+				0E88EE1022F91393008C7BA3 /* tsk_safeobj.h in Headers */,
+				0E88EDFC22F91393008C7BA3 /* tsk_ragel_state.h in Headers */,
+				0E88EE3322F91393008C7BA3 /* tsk_string.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		87178A4622CB7B0F001D12A0 /* tinySak Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87178A4D22CB7B0F001D12A0 /* Build configuration list for PBXNativeTarget "tinySak Mac" */;
+			buildPhases = (
+				87178A4322CB7B0F001D12A0 /* Headers */,
+				87178A4422CB7B0F001D12A0 /* Sources */,
+				87178A4522CB7B0F001D12A0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tinySak Mac";
+			productName = "tinySak Mac";
+			productReference = 87178A4722CB7B0F001D12A0 /* libtinySak Mac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		87178A6D22CB7B58001D12A0 /* tinySak iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87178A7422CB7B58001D12A0 /* Build configuration list for PBXNativeTarget "tinySak iOS" */;
+			buildPhases = (
+				87178A6A22CB7B58001D12A0 /* Sources */,
+				87178A6B22CB7B58001D12A0 /* Frameworks */,
+				87178A6C22CB7B58001D12A0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tinySak iOS";
+			productName = tinySak;
+			productReference = 87178A6E22CB7B58001D12A0 /* libtinySak iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87178A2122CB7A9A001D12A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					87178A4622CB7B0F001D12A0 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					87178A6D22CB7B58001D12A0 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 87178A2422CB7A9A001D12A0 /* Build configuration list for PBXProject "tinySAK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 87178A2022CB7A9A001D12A0;
+			productRefGroup = 87178A2C22CB7AD1001D12A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87178A6D22CB7B58001D12A0 /* tinySak iOS */,
+				87178A4622CB7B0F001D12A0 /* tinySak Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87178A4422CB7B0F001D12A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E88EE2C22F91393008C7BA3 /* tsk_safeobj.c in Sources */,
+				0E88EDF122F91393008C7BA3 /* tsk_mutex.c in Sources */,
+				0E88EE0A22F91393008C7BA3 /* tsk_hmac.c in Sources */,
+				0E88EDE722F91393008C7BA3 /* tsk_md5.c in Sources */,
+				0E88EE1322F91393008C7BA3 /* tsk_condwait.c in Sources */,
+				0E88EE3222F91393008C7BA3 /* tsk_object.c in Sources */,
+				0E88EDFF22F91393008C7BA3 /* tsk_ragel_state.c in Sources */,
+				0E88EDEC22F91393008C7BA3 /* tsk_ppfcs16.c in Sources */,
+				0E88EE2922F91393008C7BA3 /* tsk_thread.c in Sources */,
+				0E88EDFB22F91393008C7BA3 /* tsk_list.c in Sources */,
+				0E88EDF722F91393008C7BA3 /* tsk_binaryutils.c in Sources */,
+				0E88EE3722F91393008C7BA3 /* tsk_fsm.c in Sources */,
+				0E88EE1822F91393008C7BA3 /* tsk_params.c in Sources */,
+				0E88EE2E22F91393008C7BA3 /* tsk_sha1.c in Sources */,
+				0E88EE3522F91393008C7BA3 /* tsk_base64.c in Sources */,
+				0E88EDDF22F91393008C7BA3 /* tsk_debug.c in Sources */,
+				0E88EE1622F91393008C7BA3 /* tsk_time.c in Sources */,
+				0E88EE1A22F91393008C7BA3 /* tsk_memory.c in Sources */,
+				0E88EE0E22F91393008C7BA3 /* tsk.c in Sources */,
+				0E88EE0122F91393008C7BA3 /* tsk_plugin.c in Sources */,
+				0E88EDDD22F91393008C7BA3 /* tsk_string.c in Sources */,
+				0E88EDE122F91393008C7BA3 /* tsk_url.c in Sources */,
+				0E88EE0C22F91393008C7BA3 /* tsk_timer.c in Sources */,
+				0E88EDEA22F91393008C7BA3 /* tsk_buffer.c in Sources */,
+				0E88EDE522F91393008C7BA3 /* tsk_options.c in Sources */,
+				0E88EE2122F91393008C7BA3 /* tsk_runnable.c in Sources */,
+				0E88EDF522F91393008C7BA3 /* tsk_xml.c in Sources */,
+				0E88EE1D22F91393008C7BA3 /* tsk_semaphore.c in Sources */,
+				0E88EE3022F91393008C7BA3 /* tsk_uuid.c in Sources */,
+				0E88EE2322F91393008C7BA3 /* tsk_ppfcs32.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87178A6A22CB7B58001D12A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E88EE2B22F91393008C7BA3 /* tsk_safeobj.c in Sources */,
+				0E88EDF022F91393008C7BA3 /* tsk_mutex.c in Sources */,
+				0E88EE0922F91393008C7BA3 /* tsk_hmac.c in Sources */,
+				0E88EDE622F91393008C7BA3 /* tsk_md5.c in Sources */,
+				0E88EE1222F91393008C7BA3 /* tsk_condwait.c in Sources */,
+				0E88EE3122F91393008C7BA3 /* tsk_object.c in Sources */,
+				0E88EDFE22F91393008C7BA3 /* tsk_ragel_state.c in Sources */,
+				0E88EDEB22F91393008C7BA3 /* tsk_ppfcs16.c in Sources */,
+				0E88EE2822F91393008C7BA3 /* tsk_thread.c in Sources */,
+				0E88EDFA22F91393008C7BA3 /* tsk_list.c in Sources */,
+				0E88EDF622F91393008C7BA3 /* tsk_binaryutils.c in Sources */,
+				0E88EE3622F91393008C7BA3 /* tsk_fsm.c in Sources */,
+				0E88EE1722F91393008C7BA3 /* tsk_params.c in Sources */,
+				0E88EE2D22F91393008C7BA3 /* tsk_sha1.c in Sources */,
+				0E88EE3422F91393008C7BA3 /* tsk_base64.c in Sources */,
+				0E88EDDE22F91393008C7BA3 /* tsk_debug.c in Sources */,
+				0E88EE1522F91393008C7BA3 /* tsk_time.c in Sources */,
+				0E88EE1922F91393008C7BA3 /* tsk_memory.c in Sources */,
+				0E88EE0D22F91393008C7BA3 /* tsk.c in Sources */,
+				0E88EE0022F91393008C7BA3 /* tsk_plugin.c in Sources */,
+				0E88EDDC22F91393008C7BA3 /* tsk_string.c in Sources */,
+				0E88EDE022F91393008C7BA3 /* tsk_url.c in Sources */,
+				0E88EE0B22F91393008C7BA3 /* tsk_timer.c in Sources */,
+				0E88EDE922F91393008C7BA3 /* tsk_buffer.c in Sources */,
+				0E88EDE422F91393008C7BA3 /* tsk_options.c in Sources */,
+				0E88EE2022F91393008C7BA3 /* tsk_runnable.c in Sources */,
+				0E88EDF422F91393008C7BA3 /* tsk_xml.c in Sources */,
+				0E88EE1C22F91393008C7BA3 /* tsk_semaphore.c in Sources */,
+				0E88EE2F22F91393008C7BA3 /* tsk_uuid.c in Sources */,
+				0E88EE2222F91393008C7BA3 /* tsk_ppfcs32.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		87178A2522CB7A9A001D12A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../src\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = "-fembed-bitcode";
+			};
+			name = Debug;
+		};
+		87178A2622CB7A9A001D12A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../src\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = "-fembed-bitcode";
+			};
+			name = Release;
+		};
+		87178A4E22CB7B0F001D12A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = W9W2NC7XW4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../src\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fembed-bitcode-marker";
+				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		87178A4F22CB7B0F001D12A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W9W2NC7XW4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../src\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "-fembed-bitcode-marker";
+				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		87178A7522CB7B58001D12A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = W9W2NC7XW4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87178A7622CB7B58001D12A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W9W2NC7XW4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87178A2422CB7A9A001D12A0 /* Build configuration list for PBXProject "tinySAK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87178A2522CB7A9A001D12A0 /* Debug */,
+				87178A2622CB7A9A001D12A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87178A4D22CB7B0F001D12A0 /* Build configuration list for PBXNativeTarget "tinySak Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87178A4E22CB7B0F001D12A0 /* Debug */,
+				87178A4F22CB7B0F001D12A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87178A7422CB7B58001D12A0 /* Build configuration list for PBXNativeTarget "tinySak iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87178A7522CB7B58001D12A0 /* Debug */,
+				87178A7622CB7B58001D12A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87178A2122CB7A9A001D12A0 /* Project object */;
+}

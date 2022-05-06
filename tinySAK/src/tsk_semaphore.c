@@ -30,10 +30,21 @@
 
 /* Apple claims that they fully support POSIX semaphore but ...
  */
-#if defined(__APPLE__) /* Mac OSX/Darwin/Iphone/Ipod Touch */
-#	define TSK_USE_NAMED_SEM	1
+//#if defined(__APPLE__) /* Mac OSX/Darwin/Iphone/Ipod Touch */
+//#	define TSK_USE_NAMED_SEM	1
+//#else
+//#	define TSK_USE_NAMED_SEM	0
+//#endif
+
+#if defined(__APPLE__) && !defined(__MACH__)
+#    define TSK_USE_NAMED_SEM    1
+#    define TSK_USE_MACH_SEM     0
+#elif defined(__APPLE__) && defined(__MACH__)
+#    define TSK_USE_NAMED_SEM    0
+#    define TSK_USE_MACH_SEM     1
 #else
-#	define TSK_USE_NAMED_SEM	0
+#    define TSK_USE_NAMED_SEM    0
+#    define TSK_USE_MACH_SEM     0
 #endif
 
 #if !defined(NAME_MAX)
@@ -66,13 +77,25 @@ typedef struct named_sem_s {
     sem_t* sem;
     char name [NAME_MAX + 1];
 } named_sem_t;
-#		define SEMAPHORE_S named_sem_t
-#		define GET_SEM(PSEM) (((named_sem_t*)(PSEM))->sem)
+#       define SEMAPHORE_S named_sem_t
+#       define GET_SEM(PSEM) (((named_sem_t*)(PSEM))->sem)
+#   elif TSK_USE_MACH_SEM
+#   include <mach/mach.h>
+#   include <mach/task.h>
+#   include <mach/semaphore.h>
+#   include <TargetConditionals.h>
+#       define SEMAPHORE_S semaphore_t
+#       define GET_SEM(PSEM) ((PSEM))
 #	else
 #		define SEMAPHORE_S sem_t
 #		define GET_SEM(PSEM) ((PSEM))
 #	endif /* TSK_USE_NAMED_SEM */
+
+#   if TSK_USE_MACH_SEM
+typedef semaphore_t* SEMAPHORE_T;
+#else
 typedef sem_t* SEMAPHORE_T;
+#endif
 
 #endif
 
@@ -111,8 +134,12 @@ tsk_semaphore_handle_t* tsk_semaphore_create_2(int initial_val)
 
 #if TSK_USE_NAMED_SEM
     named_sem_t * nsem = (named_sem_t*)handle;
-    snprintf(nsem->name, (sizeof(nsem->name)/sizeof(nsem->name[0])) - 1, "/sem/%llu/%d.", tsk_time_epoch(), rand() ^ rand());
-    if ((nsem->sem = sem_open(nsem->name, O_CREAT /*| O_EXCL*/, S_IRUSR | S_IWUSR, initial_val)) == SEM_FAILED) {
+    snprintf(nsem->name, (sizeof(nsem->name)/sizeof(nsem->name[0])) - 1, "/sem_%llu_%d.", tsk_time_epoch(), rand() ^ rand());
+    if ((nsem->sem = sem_open(nsem->name, O_CREAT /*| O_EXCL*/, S_IRWXG | S_IRWXU | S_IRWXO, initial_val)) == SEM_FAILED) {
+#elif TSK_USE_MACH_SEM
+    semaphore_t* sem = (semaphore_t*)handle;
+    kern_return_t err = semaphore_create(mach_task_self(), sem, SYNC_POLICY_FIFO, initial_val);
+    if (err != KERN_SUCCESS){
 #else
     if (sem_init((SEMAPHORE_T)handle, 0, initial_val)) {
 #endif
@@ -138,6 +165,10 @@ int tsk_semaphore_increment(tsk_semaphore_handle_t* handle)
     if (handle) {
 #if TSK_UNDER_WINDOWS
         if((ret = ReleaseSemaphore((SEMAPHORE_T)handle, 1L, NULL) ? 0 : -1))
+#elif TSK_USE_MACH_SEM
+        kern_return_t err = semaphore_signal(*(SEMAPHORE_T)GET_SEM(handle));
+        ret = (err == KERN_SUCCESS) ? 0 : EINVAL;
+        if (ret)
 #else
         if((ret = sem_post((SEMAPHORE_T)GET_SEM(handle))))
 #endif
@@ -166,6 +197,18 @@ int tsk_semaphore_decrement(tsk_semaphore_handle_t* handle)
 #endif
         if (ret)	{
             TSK_DEBUG_ERROR("sem_wait function failed: %d", ret);
+        }
+#elif TSK_USE_MACH_SEM
+        kern_return_t err = KERN_SUCCESS;
+        do {
+          err= semaphore_wait(*(SEMAPHORE_T)GET_SEM(handle));
+        }
+        while (err == KERN_ABORTED);
+        
+        if(err == KERN_SUCCESS){
+            ret = 0;
+        }else{
+            TSK_DEBUG_ERROR("semaphore_wait function failed: %d", err);
         }
 #else
         do {
@@ -196,6 +239,8 @@ void tsk_semaphore_destroy(tsk_semaphore_handle_t** handle)
 #	if TSK_USE_NAMED_SEM
         named_sem_t * nsem = ((named_sem_t*)*handle);
         sem_close(nsem->sem);
+#elif TSK_USE_MACH_SEM
+        semaphore_destroy(mach_task_self(), *(SEMAPHORE_T)GET_SEM(handle));
 #else
         sem_destroy((SEMAPHORE_T)GET_SEM(*handle));
 #endif /* TSK_USE_NAMED_SEM */

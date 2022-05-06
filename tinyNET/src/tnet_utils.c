@@ -47,7 +47,11 @@ extern Platform::String^  rt_tsk_str_to_managed(char const* str);
 #	if TARGET_OS_IPHONE && !TARGET_IPHONE_SIMULATOR // Header missing in device SDK but exist in simulator
 #		include "net/_route.h" // from Doubango 3rd parties folder beacuse the one from iOS SDK is incomplete
 #	else
-#		include <net/route.h>
+#       if (__IPHONE_OS_VERSION_MIN_REQUIRED >= 40000)
+#           include "net/_route.h"
+#       else
+#           include <net/route.h>
+#       endif
 #	endif
 #endif /* HAVE_NET_ROUTE_H */
 
